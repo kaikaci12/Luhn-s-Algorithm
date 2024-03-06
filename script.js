@@ -48,3 +48,8 @@ function checkCardType(stringified) {
 
   return "Unknown Card Type";
 }
+
+function checkSum(creditCardNumber) {
+  const stringified = creditCardNumber.toString();
+  const splitedCard = stringified.split("");
+}
