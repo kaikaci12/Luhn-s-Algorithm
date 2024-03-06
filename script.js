@@ -69,4 +69,6 @@ function checkSum(creditCardNumber) {
   for (let i = 1; i < splitedCard.length; i = i + 2) {
     count2 += Number(splitedCard[i]);
   }
+
+  const finalNumber = count + count2;
 }
