@@ -53,4 +53,5 @@ function checkSum(creditCardNumber) {
   const stringified = creditCardNumber.toString();
   const splitedCard = stringified.split("");
   const everySecondNum = splitedCard.filter((number, index) => index % 2 == 0);
+  const MultyipliedByTwo = everySecondNum.map((num) => num * 2);
 }
