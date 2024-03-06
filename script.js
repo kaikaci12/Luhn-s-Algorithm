@@ -64,4 +64,9 @@ function checkSum(creditCardNumber) {
     }
     count += MultyipliedByTwo[i];
   }
+
+  let count2 = 0;
+  for (let i = 1; i < splitedCard.length; i = i + 2) {
+    count2 += Number(splitedCard[i]);
+  }
 }
