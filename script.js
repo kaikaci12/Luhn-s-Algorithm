@@ -34,7 +34,7 @@ function checkCardType(stringified) {
   }
   if (stringified.length === 16) {
     firstTwoDigits = stringified.slice(0, 2);
-    if (firstTwoDigits >= "51" || firstTwoDigits <= "55") {
+    if (firstTwoDigits >= "51" && firstTwoDigits <= "55") {
       return "MasterCard";
     }
   }
