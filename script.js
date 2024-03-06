@@ -71,4 +71,9 @@ function checkSum(creditCardNumber) {
   }
 
   const finalNumber = count + count2;
+  if (finalNumber % 10 == 0) {
+    return `The Card Is valid and It is: ${checkCardType(stringified)}`;
+  } else {
+    return "Invalid Card Number";
+  }
 }
