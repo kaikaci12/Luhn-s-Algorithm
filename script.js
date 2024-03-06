@@ -57,5 +57,11 @@ function checkSum(creditCardNumber) {
 
   let count = 0;
 
-  for (let i = 0; i < MultyipliedByTwo.length; i++) {}
+  for (let i = 0; i < MultyipliedByTwo.length; i++) {
+    if (MultyipliedByTwo[i] >= 10) {
+      MultyipliedByTwo[i] =
+        (MultyipliedByTwo[i] % 10) + Math.floor(MultyipliedByTwo[i] / 10);
+    }
+    count += MultyipliedByTwo[i];
+  }
 }
