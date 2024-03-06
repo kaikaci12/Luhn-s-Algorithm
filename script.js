@@ -77,3 +77,5 @@ function checkSum(creditCardNumber) {
     return "Invalid Card Number";
   }
 }
+
+console.log(checkSum(checkCredictCard()));
